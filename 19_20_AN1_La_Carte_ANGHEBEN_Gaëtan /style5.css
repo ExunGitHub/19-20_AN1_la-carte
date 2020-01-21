@@ -1,0 +1,29 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/bg.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+img {
+    max-height: 60%;
+}
+/*
+.boutonCoeur
+{
+height: 300px;
+width: 185px;    
+margin-top: 18%;    
+margin-left: 42%;
+display: block;
+position: absolute;
+
+    
+}*/

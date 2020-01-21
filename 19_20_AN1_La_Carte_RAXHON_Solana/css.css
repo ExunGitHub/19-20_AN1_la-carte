@@ -1,0 +1,47 @@
+body{
+  margin: 0;
+  background: url(https://s3.amazonaws.com/ritalbradley-dev-photos/twinkle-back.gif);
+   -webkit-perspective: 800px;
+   
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr repeat (3,1fr);
+  grid-column-gap: 1em;
+  padding: 60px 0;
+}
+.cardWrapper{
+  margin-top: 80px;
+  margin-left: 10px;
+}
+
+.card{
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 350px;
+  height: 450px;
+  transition: -webkit-transform 1s ease-in;
+  -webkit-transform-style: preserve-3d;
+  margin: 10px;
+}
+.card div {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+}
+
+.side-a {
+  z-index: 100;
+}
+.side-b {
+  -webkit-transform: rotateY(-180deg);
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+}
+
+

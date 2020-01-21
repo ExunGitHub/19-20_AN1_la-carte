@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="memory.css" media="all">
+    <title>La Zone de la mémoire</title>
+      <style>
+          h1, h2, p{
+              margin: 0 auto;
+              text-align: center;
+          }
+          #memory{
+              background: transparent;
+              width: 660px;
+              height: 750px;
+              margin: 0 auto;
+              padding: 20px;
+              display: grid;
+              grid-template-columns: repeat(4, 150px);
+              grid-gap: 20px;
+              grid-column: auto;
+          }
+          
+          img {
+              width: 100%;
+          }
+          span {
+              height: 190px;
+          }
+      </style>
+  </head>
+  <body>
+      <h1 style="z-index: 2; position: absolute; margin-left: 856px; margin-top: 15px">Memory</h1>
+      <h2 style="z-index: 2; position: absolute; margin-left:420px; margin-top: 50px; text-align: center;">Concentrez-vous ! C'est pourtant simple, à moins que vous ayez l'Alzheimer ?</h2>
+      <p style="z-index: 2; position: absolute; margin-left: 890px; margin-top: 85px">Score : <span id='score'>0</span></p>
+      <div id='memory' style="z-index: 2; position: absolute; margin-left: 575px; margin-top: 100px">
+        <img src="pics/spr0.jpg" id='test'>
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+        <img src="pics/spr0.jpg">
+      </div>
+      <div class="diaporama" style="z-index: 1; position: relative"></div>
+      <script src="memory.js"></script>
+  </body>
+</html>

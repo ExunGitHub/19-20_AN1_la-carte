@@ -1,0 +1,35 @@
+
+@font-face {
+
+    font-family: "cotham";
+
+    src: url(CothamSans.otf);
+}
+
+body{
+    background-color: white;
+    height:100vh;
+    overflow:hidden;
+
+}
+
+#imageFond{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-image: url(../Images/plan_gestalt.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center; 
+    z-index: -99;
+}
+
+
+a{
+    font-family: "cotham", sans-serif;
+    margin-top:4vh;
+    font-size:1vw;
+    margin-left:25vw;
+}

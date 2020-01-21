@@ -1,0 +1,37 @@
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/MainD.png);
+    background-size: cover;
+    display: flex;
+}
+
+.boutonretour
+{
+height: 80px;
+width: 85px;    
+margin-top: 8%;    
+margin-left: 9%;
+display: block;
+position: absolute;
+
+    
+}
+
+.boutonenceinte
+{
+height: 250px;
+width: 250px;    
+margin-top: 20%;    
+margin-left: 35%;
+display: block;
+position: absolute;
+
+    
+}

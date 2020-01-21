@@ -1,0 +1,253 @@
+<html>
+    <head>
+        
+         <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"/>
+        <link href="CSS.css" href="sketch.js" rel=stylesheet type="text/css" media="all">  
+        <script src="sketch.js"></script>
+        
+        
+        
+        <style>
+            
+            .hide{
+                display: none;
+            }
+            button{
+                opacity: 0;
+                position: absolute;
+            }
+            button.btn1{
+                top: 180px;
+                left: 108px;
+                width: 325px;
+                height: 285px;
+            }
+            
+            button.btn2{
+                top: 480px;
+                left: 260px;
+                width: 170px;
+                height: 180px;
+            }
+            
+            button.btn2.A{
+                top: 490px;
+                left: 120px;
+                width: 170px;
+                height: 110px;
+            }
+            
+            button.btn3{
+                top: 210px;
+                left: 440px;
+                width: 170px;
+                height: 230px;
+            }
+            
+             button.btn3.A{
+                top: 200px;
+                left: 610px;
+                width: 170px;
+                height: 100px;
+            }
+            
+             button.btn4{
+                top: 690px;
+                left: 130px;
+                width: 300px;
+                height: 250px;
+            }
+            
+            button.btn5{
+                top: 210px;
+                left: 850px;
+                width: 120px;
+                height: 220px;
+            }
+            
+            button.btn5.A{
+                top: 210px;
+                left: 960px;
+                width: 150px;
+                height: 480px;
+            }
+            
+            button.btn5.B{
+                top: 210px;
+                left: 1110px;
+                width: 70px;
+                height: 80px;
+            }
+            
+            button.btn6{
+                top: 450px;
+                left: 630px;
+                width: 320px;
+                height: 300px;
+            }
+            
+            button.btn7{
+                top: 810px;
+                left: 680px;
+                width: 200px;
+                height: 100px;
+            }
+            
+            button.btn8{
+                top: 700px;
+                left: 950px;
+                width: 200px;
+                height: 280px;
+            }
+            
+            button:hover{
+                cursor: pointer;
+            }
+        </style>
+    </head>
+            
+    
+    <body>
+        
+        <div>
+            <h1 id="titre" class='rectangle' style="font-size:6vw">Menu Grassouillet ?</h1>
+        </div>
+        
+        <div class="super">
+             <img src="Photos/La%20carte.png" alt="Carte" id="fond" usemap="#carte" max-width="100%"height="auto" >
+            <img src="Photos/Tr%C3%A9sor.png" alt="Carte" id="img1" max-width="100%" height="auto" class="hide">
+            <img src="Photos/Livre.png" alt="Carte" id="img2" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/T%C3%A9moins.png" alt="Carte" id="img3" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/Menu.png" alt="Carte" id="img4" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/Fouet.png" alt="Carte" id="img5" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/Traces.png" alt="Carte" id="img6" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/Stop.png" alt="Carte" id="img7" max-width="100%" height="auto"  class="hide">
+            <img src="Photos/Enqu%C3%AAte.png" alt="Carte" id="img8" max-width="100%" height="auto"  class="hide">
+        </div>    
+        
+        <div id="myButtons">
+            <button class="btn1">+</button>
+            <button class="btn2">+</button>
+            <button class="btn2 A">+</button>
+            <button class="btn3">+</button>
+            <button class="btn3 A">+</button>
+            <button class="btn4">+</button>
+            <button class="btn5">+</button>
+            <button class="btn5 A">+</button>
+            <button class="btn5 B">+</button>
+            <button class="btn6">+</button>
+            <button class="btn7">+</button>
+            <button class="btn8">+</button>
+        </div>
+        
+        <script type="text/javascript">
+            
+            let Allbtn1 = document.querySelectorAll(".btn1");
+            Allbtn1.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img1");
+                };
+            });
+            
+            let Allbtn2 = document.querySelectorAll(".btn2");
+            Allbtn2.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img2");
+                };
+            });
+            
+            let Allbtn3 = document.querySelectorAll(".btn3");
+            Allbtn3.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img3");
+                };
+            });
+            
+            let Allbtn4 = document.querySelectorAll(".btn4");
+            Allbtn4.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img4");
+                };
+            });
+            
+            let Allbtn5 = document.querySelectorAll(".btn5");
+            Allbtn5.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img5");
+                };
+            });
+            
+            let Allbtn6 = document.querySelectorAll(".btn6");
+            Allbtn6.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img6");
+                };
+            });
+            
+            let Allbtn7 = document.querySelectorAll(".btn7");
+            Allbtn7.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img7");
+                };
+            });
+            
+            let Allbtn8 = document.querySelectorAll(".btn8");
+            Allbtn8.forEach(function(btn){
+                btn.onclick = function(){
+                    change("#img8");
+                };
+            });
+            
+            
+            let img1 = document.querySelector("#img1");
+            img1.onclick = reset;
+            
+            let img2 = document.querySelector("#img2");
+            img2.onclick = reset;
+            
+            let img3 = document.querySelector("#img3");
+            img3.onclick = reset;
+            
+            let img4 = document.querySelector("#img4");
+            img4.onclick = reset;
+            
+            let img5 = document.querySelector("#img5");
+            img5.onclick = reset;
+            
+            let img6 = document.querySelector("#img6");
+            img6.onclick = reset;
+            
+            let img7 = document.querySelector("#img7");
+            img7.onclick = reset;
+            
+            let img8 = document.querySelector("#img8");
+            img8.onclick = reset;
+            
+            function change(id){
+                let fond = document.querySelector("#fond");
+                let img1 = document.querySelector(id);
+                let myButtons = document.querySelector("#myButtons");
+                myButtons.classList.add("hide");
+                fond.classList.add("hide");
+                img1.classList.remove("hide");
+                img1.classList.add("show");
+            }
+            function reset(){
+                //var image = document.getElementById('fond');
+                //image.src="Photo/Carte.jpg";
+                let fond = document.querySelector("#fond");
+                let elemToHide = document.querySelector(".show");
+                elemToHide.classList.add("hide");
+                elemToHide.classList.remove("show");
+                fond.classList.remove("hide");
+                let myButtons = document.querySelector("#myButtons");
+                myButtons.classList.remove("hide");
+            }
+        </script>
+        
+         <div>
+            <p style="color: white" id="rules">Suivez le fil rouge depuis en haut à gauche !</p>
+        </div>
+    </body>
+    
+</html>

@@ -1,0 +1,1172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  background-image: url(17068.jpg) }
+
+#universe {
+  z-index: 1;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#galaxy {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /*perspective: 4000;*/ }
+
+#solar-system {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d; }
+
+.orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform-style: preserve-3d;
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.orbit .orbit {
+  animation-name: suborbit; }
+
+.pos {
+  position: absolute;
+  top: 50%;
+  width: 2em;
+  height: 2em;
+  margin-top: -1em;
+  margin-left: -1em;
+  transform-style: preserve-3d;
+  animation-name: invert;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+#GlieseP, .planet, #Zelon-b .moon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-left: -0.5em;
+  border-radius: 50%;
+  transform-style: preserve-3d; }
+
+#GlieseP {
+  background-color: #FB7209;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 60px rgba(255, 160, 60, 0.4); }
+
+.planet {
+  background-color: #202020;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%; }
+
+/* --------------------------------------------------------------------------- planets index */
+#GlieseAlpha {
+  z-index: 10; }
+
+#VoynichGamma {
+  z-index: 9; }
+
+#Zelon-b {
+  z-index: 8; }
+
+#GliesePrime {
+  z-index: 6; }
+
+#Vilarius7 {
+  z-index: 5; }
+
+#GlieseP {
+  z-index: 1; }
+
+/* --------------------------------------------------------------------------- animations */
+@keyframes orbit {
+  0% {
+    transform: rotateZ(0deg); }
+
+  100% {
+    transform: rotateZ(-360deg); } }
+
+@keyframes suborbit {
+  0% {
+    transform: rotateX(90deg) rotateZ(0deg); }
+
+  100% {
+    transform: rotateX(90deg) rotateZ(-360deg); } }
+
+@keyframes invert {
+  0% {
+    transform: rotateX(-90deg) rotateY(360deg) rotateZ(0deg); }
+
+  100% {
+    transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg); } }
+
+/* --------------------------------------------------------------------------- opening */
+.view-3D .opening #GlieseP,
+.view-3D .opening .orbit,
+.view-3D .opening .pos,
+.view-3D .opening .planet,
+.view-3D .opening .satelite,
+.view-3D .opening .ring {
+  transition-duration: 4s; }
+
+#universe.opening #GlieseP {
+  box-shadow: 0 0 0 rgba(255, 160, 60, 0); }
+
+/* --------------------------------------------------------------------------- 2D view */
+.view-2D.zoom-large #GlieseP {
+  transform-style: flat; }
+
+.view-2D.zoom-large .orbit {
+  transform-style: flat; }
+
+.view-2D #GlieseP,
+.view-2D .ring {
+  transform: rotateX(0deg); }
+
+.view-2D .planet,
+.view-2D .moon {
+  transform: rotateX(90deg); }
+
+
+/* --------------------------------------------------------------------------- large zoom */
+.zoom-large #solar-system {
+  width: 100%; }
+
+.zoom-large.view-2D .scale-stretched #solar-system {
+  font-size: 26%; }
+
+.zoom-large.view-3D .scale-stretched #solar-system {
+  font-size: 62%; }
+
+.zoom-large.view-2D .scale-d #solar-system {
+  font-size: 22%; }
+
+.zoom-large.view-3D .scale-d #solar-system {
+  font-size: 48%; }
+
+.zoom-large.view-2D .scale-s #solar-system {
+  font-size: 7%; }
+
+.zoom-large.view-3D .scale-s #solar-system {
+  font-size: 14%; }
+
+/* --------------------------------------------------------------------------- close zoom */
+.zoom-close #solar-system {
+  width: 200%;
+  font-size: 100%; }
+
+.zoom-close .scale-stretched #solar-system {
+  margin-left: -100%; }
+
+.zoom-close .scale-d #solar-system {
+  margin-left: -106%; }
+
+.zoom-close.view-2D .scale-d #solar-system {
+  font-size: 84%; }
+
+.zoom-close.view-3D .scale-d #solar-system {
+  font-size: 84%; }
+
+.zoom-close .scale-s #solar-system {
+  margin-left: -145%; }
+
+.zoom-close.view-2D .scale-s #solar-system {
+  font-size: 40%; }
+
+.zoom-close.view-3D .scale-s #solar-system {
+  font-size: 40%; }
+
+.zoom-close .orbit,
+.zoom-close .pos,
+.zoom-close .planet,
+.zoom-close .satelite,
+.zoom-close .ring {
+  animation-play-state: paused!important;
+  animation-duration: 0s!important;
+  animation: none!important; }
+
+.zoom-close.view-2D .planet,
+.zoom-close.view-2D .moon {
+  transform: rotateX(0deg); }
+
+.zoom-close.view-3D .planet {
+  transform: rotateX(-90deg); }
+
+.zoom-close.view-3D .moon {
+  transform: rotateX(90deg); }
+
+.zoom-close .pos {
+  left: 100%!important;
+  top: 50%!important; }
+
+/* --------------------------------------------------------------------------- data */
+/* --------------------------------------------------------------------------- speed */
+/* sideral years */
+/* ADD HOVER FUNCTIONALITY THROUGH JAVASCRIPT*/
+#GlieseAlpha .pos,
+#GlieseAlpha .planet,
+#GlieseAlpha.orbit {
+  animation-duration: 4.89016s; }
+
+#VoynichGamma .pos,
+#VoynichGamma .planet,
+#VoynichGamma.orbit {
+  animation-duration: 7.38237s; }
+
+#Zelon-b .pos,
+#Zelon-b .planet, 
+#Zelon-b.orbit {
+  animation-duration: 12.00021s; }
+
+#Zelon-b .orbit .pos,
+#Zelon-b .orbit {
+  animation-duration: 2.89764s; }
+
+#GliesePrime .pos,
+#GliesePrime .planet,
+#GliesePrime.orbit {
+  animation-duration: 22.57017s; }
+
+#Vilarius7 .pos,
+#Vilarius7 .planet,
+#Vilarius7.orbit {
+  animation-duration: 38.35138s; }
+
+/* --------------------------------------------------------------------------- planets sizes */
+/* --------------------------------------------------------------------------- stretched sizes */
+.scale-stretched #GlieseP {
+  font-size: 24em; }
+
+.scale-stretched #GlieseAlpha .planet {
+  font-size: 1.5em; }
+
+.scale-stretched #VoynichGamma .planet {
+  font-size: 3.72em; }
+
+.scale-stretched #Zelon-b .planet {
+  font-size: 3.92em; }
+
+.scale-stretched #Zelon-b .moon {
+  font-size: 1.2em; }
+
+.scale-stretched #GliesePrime .planet {
+  font-size: 2.9em; }
+
+.scale-stretched #Vilarius7 .planet {
+  font-size: 12em; }
+
+/* --------------------------------------------------------------------------- scaled sizes */
+/*
+(planets radius * 2) * ratio
+*/
+/*$distanceScaleRatio:   0.000075em;*/
+/* --------------------------------------------------------------------------- planets distance scale sizes */
+.scale-d #GlieseP {
+  font-size: 41.73048em; }
+
+.scale-d #GlieseAlpha .planet {
+  font-size: 0.14634em; }
+
+.scale-d #VoynichGamma .planet {
+  font-size: 0.36306em; }
+
+.scale-d #Zelon-b .planet {
+  font-size: 0.38226em; }
+
+.scale-d #Zelon-b .moon {
+  font-size: 0.08226em; }
+
+.scale-d #GliesePrime .planet {
+  font-size: 0.20334em; }
+
+.scale-d #Vilarius7 .planet {
+  font-size: 4.19466em; }
+
+/* --------------------------------------------------------------------------- planet size scale sizes */
+.scale-s #GlieseP {
+  font-size: 417.3048em; }
+
+.scale-s #GlieseAlpha .planet {
+  font-size: 1.4634em; }
+
+.scale-s #VoynichGamma .planet {
+  font-size: 3.6306em; }
+
+.scale-s #Zelon-b .planet {
+  font-size: 3.8226em; }
+
+.scale-s #Zelon-b .moon {
+  font-size: 0.8226em; }
+
+.scale-s #GliesePrime .planet {
+  font-size: 2.0334em; }
+
+.scale-s #Vilarius7 .planet {
+  font-size: 41.9466em; }
+
+/* --------------------------------------------------------------------------- stretched orbits */
+.scale-stretched #GlieseAlpha.orbit {
+  width: 38em;
+  height: 38em;
+  margin-top: -16em;
+  margin-left: -16em; }
+
+.scale-stretched #VoynichGamma.orbit {
+  width: 40em;
+  height: 40em;
+  margin-top: -20em;
+  margin-left: -20em; }
+
+.scale-stretched #Zelon-b.orbit {
+  width: 56em;
+  height: 56em;
+  margin-top: -28em;
+  margin-left: -28em; }
+
+.scale-stretched #Zelon-b .orbit {
+  width: 6em;
+  height: 6em;
+  margin-top: -3em;
+  margin-left: -3em; }
+
+.scale-stretched #GliesePrime.orbit {
+  width: 72em;
+  height: 72em;
+  margin-top: -36em;
+  margin-left: -36em; }
+
+.scale-stretched #Vilarius7.orbit {
+  width: 100em;
+  height: 100em;
+  margin-top: -50em;
+  margin-left: -50em; }
+
+/* --------------------------------------------------------------------------- scaled orbits */
+/* --------------------------------------------------------------------------- distance scale orbits */
+.scale-d #GlieseAlpha.orbit {
+  width: 44.74176em;
+  height: 44.74176em;
+  margin-top: -22.37088em;
+  margin-left: -22.37088em; }
+
+.scale-d #VoynichGamma.orbit {
+  width: 47.35737em;
+  height: 47.35737em;
+  margin-top: -23.67869em;
+  margin-left: -23.67869em; }
+
+.scale-d #Zelon-b.orbit {
+  width: 49.50959em;
+  height: 49.50959em;
+  margin-top: -24.75479em;
+  margin-left: -24.75479em; }
+
+.scale-d #GliesePrime.orbit {
+  width: 53.58356em;
+  height: 53.58356em;
+  margin-top: -260.79178em;
+  margin-left: -26.79178em; }
+
+.scale-d #Vilarius7.orbit {
+  width: 82.2042em;
+  height: 82.2042em;
+  margin-top: -41.1021em;
+  margin-left: -41.1021em; }
+
+/* Moon */
+.scale-d #Zelon-b .orbit {
+  width: 1em;
+  height: 1em;
+  margin-top: -0.5em;
+  margin-left: -0.5em; }
+
+/* --------------------------------------------------------------------------- size scale orbits */
+.scale-s #GlieseAlpha.orbit {
+  width: 41.3048em;
+  height: 41.3048em;
+  margin-top: -220.6524em;
+  margin-left: -215.6524em; }
+
+.scale-s #VoynichGamma.orbit {
+  width: 457.3048em;
+  height: 457.3048em;
+  margin-top: -228.6524em;
+  margin-left: -228.6524em; }
+
+.scale-s #Zelon-b.orbit {
+  width: 473.3048em;
+  height: 473.3048em;
+  margin-top: -236.6524em;
+  margin-left: -236.6524em; }
+
+.scale-s #GliesePrime.orbit {
+  width: 489.3048em;
+  height: 489.3048em;
+  margin-top: -244.6524em;
+  margin-left: -244.6524em; }
+
+.scale-s #Vilarius7.orbit {
+  width: 561.3048em;
+  height: 561.3048em;
+  margin-top: -280.6524em;
+  margin-left: -280.6524em; }
+
+/* --------------------------------------------------------------------------- planets starting position and lighting effect */
+/* --------------------------------------------------------------------------- GlieseAlpha ; pos: Top */
+#GlieseAlpha .pos {
+  left: 40%;
+  top: 35vh; }
+
+#GlieseAlpha .planet {
+  animation-name: shadow-GlieseAlpha; }
+
+@keyframes shadow-GlieseAlpha {
+  0% {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    /* TOP */ }
+
+  25% {
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    /* LEFT */ }
+
+  50% {
+    box-shadow: inset 13px -5px 4px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  50.01% {
+    box-shadow: inset -13px -5px 4px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  75% {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ }
+
+  100% {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    /* TOP */ } }
+
+.scaled.view-2D #GlieseAlpha .planet,
+.scaled.view-3D #GlieseAlpha .planet {
+  box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+  /* RIGHT */ }
+
+/* --------------------------------------------------------------------------- VoynichGamma ; pos: Left */
+#VoynichGamma .pos {
+  left: 0;
+  top: 26vh; }
+
+#VoynichGamma .planet {
+  animation-name: shadow-VoynichGamma; }
+
+@keyframes shadow-VoynichGamma {
+  0% {
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    /* LEFT */ }
+
+  25% {
+    box-shadow: inset 22px -20px 10px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  25.5% {
+    box-shadow: inset -22px -20px 10px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  50% {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ }
+
+  75% {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    /* TOP */ }
+
+  100% {
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    /* LEFT */ } }
+
+.scaled.view-2D #VoynichGamma .planet,
+.scaled.view-3D #VoynichGamma .planet {
+  box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+  /* RIGHT */ }
+
+/* --------------------------------------------------------------------------- Zelon-b ; pos: Right */
+#Zelon-b .pos {
+  left: 100%;
+  top: 50%; }
+
+#Zelon-b .planet {
+  animation-name: shadow-Zelon-b; }
+
+@keyframes shadow-Zelon-b {
+  0% {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ }
+
+  25% {
+    box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+    /* TOP */ }
+
+  50% {
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    /* LEFT */ }
+
+  75% {
+    box-shadow: inset 24px -20px 15px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  75.01% {
+    box-shadow: inset -24px -20px 15px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  100% {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ } }
+
+.scaled.view-2D #Zelon-b .planet,
+.scaled.view-3D #Zelon-b .planet {
+  box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+  /* RIGHT */ }
+
+
+/* --------------------------------------------------------------------------- GliesePrime ; pos: Bottom */
+#GliesePrime .pos {
+  left: 50%;
+  top: 60vh; }
+
+#GliesePrime .planet {
+  animation-name: shadow-GliesePrime; }
+
+@keyframes shadow-GliesePrime {
+  0% {
+    box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  25% {
+    box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ }
+
+  50% {
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+    /* TOP */ }
+
+  75% {
+    box-shadow: inset 4px 0 2px rgba(0, 0, 0, 0.5);
+    /* LEFT */ }
+
+  99.99% {
+    box-shadow: inset 18px -10px 10px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  100% {
+    box-shadow: inset -18px -10px 10px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ } }
+
+.scaled.view-2D #GliesePrime .planet,
+.scaled.view-3D #GliesePrime .planet {
+  box-shadow: inset -4px 0 2px rgba(0, 0, 0, 0.5);
+  /* RIGHT */ }
+
+/* --------------------------------------------------------------------------- Vilarius7 ; pos: Right */
+#Vilarius7 .pos {
+  left: 100%;
+  top: 52.5vh; }
+
+#Vilarius7 .planet {
+  animation-name: shadow-Vilarius7; }
+
+@keyframes shadow-Vilarius7 {
+  0% {
+    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ }
+
+  25% {
+    box-shadow: inset 0 3px 2px rgba(0, 0, 0, 0.5);
+    /* TOP */ }
+
+  50% {
+    box-shadow: inset 16px 0 5px rgba(0, 0, 0, 0.5);
+    /* LEFT */ }
+
+  75% {
+    box-shadow: inset 94px -30px 40px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  75.01% {
+    box-shadow: inset -94px -30px 40px rgba(0, 0, 0, 0.5);
+    /* BOTTOM */ }
+
+  100% {
+    box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
+    /* RIGHT */ } }
+
+.scaled.view-2D #Vilarius7 .planet,
+.scaled.view-3D #Vilarius7 .planet {
+  box-shadow: inset -16px 0 5px rgba(0, 0, 0, 0.5);
+  /* RIGHT */ }
+
+/* --------------------------------------------------------------------------- DEBUG 
+.pos, 
+.planet, 
+.orbit,
+.ring { animation-duration: 20s!important; }
+
+/* */
+/* --------------------------------------------------------------------------- navigation styles */
+dl.infos {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: -90%;
+  margin-left: 90%;
+  padding-left: 100%;
+  transform-origin: 100% 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(90deg); }
+
+dl.infos:before {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 30px;
+  left: 15px;
+  bottom: 0;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  transform-style: preserve-3d;
+  transform: skew(-45deg, 0deg);
+  box-shadow: inset 1px 1px black; }
+
+dl.infos dt {
+  position: absolute;
+  left: 50px;
+  margin-bottom: 26px;
+  bottom: 30px;
+  color: #FFF;
+  font-size: 14px;
+  text-shadow: 1px 1px 2px black; }
+
+dl.infos dd:after {
+  position: absolute;
+  left: 50px;
+  bottom: 30px;
+  width: 300px;
+  color: #FFF;
+  font-size: 22px;
+  text-shadow: 1px 1px 2px black; }
+
+dl.infos dd span:after {
+  position: absolute;
+  left: 50px;
+  bottom: 14px;
+  width: 300px;
+  color: #FFF;
+  font-size: 11px;
+  text-shadow: 1px 1px 2px black; }
+
+.GlieseP #GlieseP .infos,
+.GlieseAlpha #GlieseAlpha .infos,
+.VoynichGamma #VoynichGamma .infos,
+.Zelon-b #Zelon-b .infos,
+.GliesePrime #GliesePrime .infos,
+.Vilarius7 #Vilarius7 .infos,
+ {
+  display: block;
+  opacity: 1;
+  transform: rotateX(0deg); }
+
+.GlieseAlpha #GlieseAlpha.orbit,
+.VoynichGamma #VoynichGamma.orbit,
+.Zelon-b #Zelon-b.orbit,
+.GliesePrime #GliesePrime.orbit,
+.Vilarius7 #Vilarius7.orbit,
+ {
+  border: 1px solid rgba(255, 255, 255, 0.8); }
+
+.hide-UI h1,
+.hide-UI #data,
+.hide-UI dl.infos,
+.hide-UI #controls {
+  opacity: 0!important;
+  margin-top: -30px; }
+
+.hide-UI #data {
+  margin-bottom: -30px; }
+
+.hide-UI .orbit {
+  border: 1px solid rgba(255, 255, 255, 0.2) !important; }
+
+h1 {
+  width: 100%;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8); }
+
+h1 span, #navbar h1 a {
+  display: inline;
+  position: relative;
+  padding: 0;
+  font-weight: 300;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5); }
+}
+
+#navbar, #controls, #data {
+  background: rgba(0, 0, 0, 0.4); }
+
+#navbar {
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  width: 100%;
+  height: 48px; }
+
+#navbar a, #data a, #controls label {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  position: relative;
+  text-decoration: none; }
+
+#navbar a:hover, #data a:hover, #controls label:hover {
+  color: #FFF; }
+
+#data a.active {
+  color: #0CF; }
+
+#navbar a {
+  position: absolute;
+  top: 0;
+  height: 48px;
+  padding: 16px;
+  font-size: 14px; }
+
+#toggle-data {
+  left: 0; }
+
+#toggle-controls {
+  right: 0; }
+
+#data, #controls {
+  z-index: 99;
+  position: fixed;
+  opacity: 1;
+  top: 49px;
+  padding: 16px; }
+
+.data-close #data {
+  left: -100%; }
+
+.data-open #data {
+  left: 0px; }
+
+.controls-close #controls {
+  right: -100%; }
+
+.controls-open #controls {
+  right: 0px; }
+
+#data a {
+  margin-bottom: 1px;
+  padding: 6px 10px;
+  font-size: 18px; }
+
+#controls label {
+  opacity: .6;
+  height: 24px;
+  margin-bottom: 28px; }
+
+#controls label:hover {
+  opacity: 1; }
+
+#controls label:before {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  text-align: center;
+  color: #FFF;
+  z-index: 99; }
+
+#controls label span {
+  display: block;
+  margin-left: 36px;
+  padding-top: 4px;
+  font-size: 18px;
+  color: #FFF; }
+
+#controls input {
+  display: block;
+  appearance: none; }
+
+#controls input[type="radio"]:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #FFF;
+  border-radius: 16px; }
+
+#controls input:checked[type="radio"]:after {
+  content: '';
+  display: block;
+  top: 3px;
+  margin-left: 3px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  z-index: 99; }
+
+#controls input[type="checkbox"]:before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 25px;
+  width: 100px;
+  height: 22px;
+  border: 2px solid #FFF;
+  border-radius: 16px; }
+
+#controls input[type="checkbox"]:after {
+  content: '';
+  display: block;
+  top: 3px;
+  right: 25px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #FFF;
+  z-index: 99; }
+
+#controls label.set-view:before {
+  font: bold small-caps 11px/20px sans-serif; }
+
+.view-3D #controls label.set-view:before {
+  content: '2D';
+  margin-left: 82px; }
+
+.view-2D #controls label.set-view:before {
+  content: '3D';
+  margin-left: 7px; }
+
+.view-3D #controls .set-view input:after {
+  margin-left: 3px; }
+
+.view-2D #controls .set-view input:after {
+  margin-left: 81px; }
+
+#controls label.set-zoom:before {
+  font: normal small-caps 18px/14px sans-serif; }
+
+.zoom-large #controls label.set-zoom:before {
+  position: absolute;
+    right: 25px;
+  content: '+';
+  margin-left: 82px; }
+
+.zoom-close #controls label.set-zoom:before { 
+  position: absolute;
+    right: 25px;
+  content: '-';
+  margin-left: 7px; }
+
+.zoom-large #controls .set-zoom input:after { 
+  position: absolute;
+    right: 25px;
+  margin-left: 3px; }
+
+.zoom-close #controls .set-zoom input:after {
+  position: absolute;
+    right: 25px;
+  margin-left: 81px; }
+
+/* --------------------------------------------------------------------------- transitions */
+.pos {
+  transition-property: top, left; }
+
+#solar-system, .orbit,
+.planet,
+.satelite,
+.ring {
+  transition-property: width, height, top, left, margin-left, margin-top, webkit-transform; }
+
+#GlieseP, .icon {
+  transition-property: width, height, webkit-transform; }
+
+#solar-system,
+#GlieseP,
+.orbit,
+.pos,
+.planet,
+.satelite,
+.ring,
+.infos,
+.icon {
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out; }
+
+#solar-system,
+#GlieseP,
+.planet,
+.satelite,
+.ring {
+  transition-delay: 0s; }
+
+.pos {
+  transition-delay: 1s; }
+
+.opening #solar-system,
+.opening #GlieseP,
+.opening .orbit,
+.opening .pos,
+.opening .planet,
+.opening .satelite,
+.opening .ring,
+.opening .infos,
+.opening h1,
+.opening #data,
+.opening dl.infos,
+.opening #controls {
+  transition-duration: 0s;
+  transition-delay: 0s; }
+
+.opening .pos {
+  transition-delay: 0s; }
+
+h1, #data, #controls {
+  transition-property: opacity, margin;
+  transition-duration: .8s;
+  transition-timing-function: ease-in-out; }
+
+h1 {
+  transition-delay: .35s; }
+
+#data {
+  transition-delay: .7s; }
+
+#controls {
+  transition-delay: 1s; }
+
+/* --------------------------------------------------------------------------- images */
+
+#popup {
+    left: -300px;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.4);
+    z-index: 5000;
+    transition-property: all;
+    transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease; 
+    -moz-transition: all 2s ease;
+    -webkit-transition: all 2s ease; /*wtf do these mean ?*/
+}
+ 
+#popup.transform-active{
+    left: 0px;
+    
+}
+
+#popup1 {
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.55);
+    z-index: 5000;
+    
+}
+
+#popup2 {
+   left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.55);
+    z-index: 5000; 
+   
+}
+
+#popup3 {
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.55);
+    z-index: 5000; 
+   
+}
+
+#popup4 {
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.55);
+    z-index: 5000; 
+      
+}
+
+#popup5 {
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 30vw;
+    background-color:rgba(120, 120, 120, 0.55);
+    z-index: 5000; 
+    
+}
+
+#ClickMe {
+    height: 30px;
+    width: 30px;
+    background-image:url(87-874731_planet-uranus-png-planet-uranus-white-background-transparent.png);
+    cursor:grab;
+}
+
+#ClickMe1 {
+    height: 30px;
+    width: 30px;
+    background-image: url(MSR_Zebes.png);
+    cursor:grab;
+}
+
+#ClickMe2 {
+    height: 30px;
+    width: 30px;
+    background-image:url(580b585b2edbce24c47b2708.png);
+    cursor:grab;
+}
+
+#ClickMe3 {
+    height: 30px;
+    width: 30px;
+    background-image:url(579px-Jupiter.png);
+    cursor:grab;
+}
+
+#ClickMe4 {
+    height: 30px;
+    width: 30px;
+    background-image:url(103-1031915_alien-planet-png-transparent-png.png);
+    cursor:grab;
+}
+
+#ClickMe5 {
+    height: 30px;
+    width: 30px;
+    
+}
+
+#Exit {
+   position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+}
+#Exit1 {
+    position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+}
+#Exit2 {
+    position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+}
+#Exit3 {
+    position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+} 
+#Exit4   {
+    position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+}
+
+#Exit5   {
+    position: fixed;
+    top:10.5%;
+    left:82.60%;
+    border-radius:16px;
+}
+
+#ImagePopup {
+    position:fixed;
+text-align: center;
+    
+}
+
+.hide{
+    display: none;
+}
+

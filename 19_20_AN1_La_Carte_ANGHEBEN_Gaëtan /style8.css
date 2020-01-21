@@ -1,0 +1,25 @@
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/epaule.png);
+    background-size: cover;
+    display: flex;
+}
+
+.boutonCoeur
+{
+height: 80px;
+width: 85px;    
+margin-top: 25%;    
+margin-left: 43%;
+display: block;
+position: absolute;
+
+    
+}

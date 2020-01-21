@@ -1,0 +1,543 @@
+{ "frames": [
+   {
+    "filename": "ecrito1 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 1.aseprite",
+    "frame": { "x": 128, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 2.aseprite",
+    "frame": { "x": 256, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 3.aseprite",
+    "frame": { "x": 384, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 4.aseprite",
+    "frame": { "x": 512, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 5.aseprite",
+    "frame": { "x": 640, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 6.aseprite",
+    "frame": { "x": 768, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 7.aseprite",
+    "frame": { "x": 896, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 8.aseprite",
+    "frame": { "x": 1024, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 9.aseprite",
+    "frame": { "x": 1152, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 10.aseprite",
+    "frame": { "x": 1280, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 11.aseprite",
+    "frame": { "x": 1408, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 12.aseprite",
+    "frame": { "x": 1536, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 13.aseprite",
+    "frame": { "x": 1664, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 14.aseprite",
+    "frame": { "x": 1792, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 15.aseprite",
+    "frame": { "x": 1920, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 16.aseprite",
+    "frame": { "x": 2048, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 17.aseprite",
+    "frame": { "x": 2176, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 18.aseprite",
+    "frame": { "x": 2304, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 19.aseprite",
+    "frame": { "x": 2432, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 20.aseprite",
+    "frame": { "x": 2560, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 21.aseprite",
+    "frame": { "x": 2688, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 22.aseprite",
+    "frame": { "x": 2816, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 23.aseprite",
+    "frame": { "x": 2944, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 24.aseprite",
+    "frame": { "x": 3072, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 25.aseprite",
+    "frame": { "x": 3200, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 26.aseprite",
+    "frame": { "x": 3328, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 27.aseprite",
+    "frame": { "x": 3456, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 28.aseprite",
+    "frame": { "x": 3584, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 29.aseprite",
+    "frame": { "x": 3712, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 30.aseprite",
+    "frame": { "x": 3840, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 31.aseprite",
+    "frame": { "x": 3968, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 32.aseprite",
+    "frame": { "x": 4096, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 33.aseprite",
+    "frame": { "x": 4224, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 34.aseprite",
+    "frame": { "x": 4352, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 35.aseprite",
+    "frame": { "x": 4480, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 36.aseprite",
+    "frame": { "x": 4608, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 37.aseprite",
+    "frame": { "x": 4736, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 38.aseprite",
+    "frame": { "x": 4864, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 39.aseprite",
+    "frame": { "x": 4992, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 40.aseprite",
+    "frame": { "x": 5120, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 41.aseprite",
+    "frame": { "x": 5248, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 42.aseprite",
+    "frame": { "x": 5376, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 43.aseprite",
+    "frame": { "x": 5504, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 44.aseprite",
+    "frame": { "x": 5632, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 45.aseprite",
+    "frame": { "x": 5760, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 46.aseprite",
+    "frame": { "x": 5888, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 47.aseprite",
+    "frame": { "x": 6016, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 48.aseprite",
+    "frame": { "x": 6144, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 49.aseprite",
+    "frame": { "x": 6272, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 50.aseprite",
+    "frame": { "x": 6400, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 51.aseprite",
+    "frame": { "x": 6528, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 52.aseprite",
+    "frame": { "x": 6656, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 53.aseprite",
+    "frame": { "x": 6784, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 54.aseprite",
+    "frame": { "x": 6912, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 55.aseprite",
+    "frame": { "x": 7040, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 56.aseprite",
+    "frame": { "x": 7168, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 57.aseprite",
+    "frame": { "x": 7296, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   },
+   {
+    "filename": "ecrito1 58.aseprite",
+    "frame": { "x": 7424, "y": 0, "w": 128, "h": 32 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 128, "h": 32 },
+    "sourceSize": { "w": 128, "h": 32 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.9-x64",
+  "format": "RGBA8888",
+  "size": { "w": 7552, "h": 32 },
+  "scale": "1",
+  "frameTags": [
+  ]
+ }
+}

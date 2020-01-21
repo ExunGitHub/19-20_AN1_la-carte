@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    font-family: Tahoma;
+    background: url("07.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container1 {
+    position: absolute;
+    top: 88%;
+    left: 68.3%;
+    transform: translateX(-50%) translateX(-50%);
+    text-align: center;
+    animation: y 0s;
+}
+
+@keyframes y {
+    0%
+    {
+        opacity: 0%
+    }
+    90%
+    {
+        opacity: 0%
+    }
+    100%
+    {
+        opacity: 100%
+    }
+}
+
+.text1 {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.5vw;
+}
+
+.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:92%;
+    left:92%;
+    overflow:visible;
+}
+
+.fleche {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
+}

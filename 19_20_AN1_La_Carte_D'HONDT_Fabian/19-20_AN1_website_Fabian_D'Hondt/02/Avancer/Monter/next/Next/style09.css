@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.shadow {
+    position:absolute;
+    max-width:45%;
+    max-height:45%;
+    top:92%;
+    left:92%;
+    overflow:visible;
+}
+
+.fleche {
+    position:relative;
+    max-width:100%;
+    max-height:100%;
+    margin-top:-50%;
+    margin-left:-50%;
+    animation: f 6s;
+}
+
+@keyframes f {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+.myVideo {
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

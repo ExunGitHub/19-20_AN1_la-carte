@@ -1,0 +1,38 @@
+
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/pied.png);
+    background-size: cover;
+    display: flex;
+}
+
+.boutonretour
+{
+height: 80px;
+width: 85px;    
+margin-top: 5%;    
+margin-left: 76%;
+display: block;
+position: absolute;
+
+    
+}
+
+.boutonpied
+{
+height: 280px;
+width: 185px;    
+margin-top: 25%;    
+margin-left: 27%;
+display: block;
+position: absolute;
+
+    
+}

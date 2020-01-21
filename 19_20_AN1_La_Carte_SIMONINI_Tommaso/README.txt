@@ -1,0 +1,2 @@
+Pour s'assurer que le tout soit fonctionel, il est recomandé d'utiliser Chrome pour accéder à la carte.
+Il est aussi conseillé d'agrandire les proportions de la page à 175%, grâce à la commande "ctrl +".

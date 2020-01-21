@@ -1,0 +1,24 @@
+body
+
+{background-color: black}
+
+{padding:0;
+ margin:0;} 
+
+.super img{
+    max-width:100%;}
+
+.rectangle{
+    width: center;
+    text-align: center;
+    background: #A77B21 ;
+}
+
+#fond{
+   right: O;
+   width: auto; 
+}
+
+#rules{
+    margin-left: 40%;
+}

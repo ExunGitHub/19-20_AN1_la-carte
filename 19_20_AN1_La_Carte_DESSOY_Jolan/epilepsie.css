@@ -1,0 +1,66 @@
+.diaporama{
+    margin: 0 auto;
+    width: 95vw;
+    height: 98.5vh;
+    background-image: url(pics/background1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    
+    webkit-animation-name: diapo;
+    webkit-animation-duration: 1s;
+    webkit-animating-timing-function: linear;
+    webkit-animation-iteration-count: infinite;
+    webkit-animation-direction: normal;
+    
+    moz-animation-name: diapo;
+    moz-animation-duration: 1s;
+    moz-animating-timing-function: linear;
+    moz-animation-iteration-count: infinite;
+    moz-animation-direction: normal;
+    
+    animation-name: diapo;
+    animation-duration: 1s;
+    animating-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@-webit-keyframes diapo{
+    0%{background-image: url(background/epilepsie1.jpg);}
+    10%{background-image: url(background/epilepsie2.jpg);}
+    20%{background-image: url(background/epilepsie3.jpg);}
+    30%{background-image: url(background/epilepsie4.jpg);}
+    40%{background-image: url(background/epilepsie5.jpg);}
+    50%{background-image: url(background/epilepsie5.jpg);}
+    60%{background-image: url(background/epilepsie4.jpg);}
+    70%{background-image: url(background/epilepsie3.jpg);}
+    80%{background-image: url(background/epilepsie2.jpg);}
+    90%{background-image: url(background/epilepsie1.jpg);}
+}
+
+@-moz-keyframes diapo{
+    0%{background-image: url(background/epilepsie1.jpg);}
+    10%{background-image: url(background/epilepsie2.jpg);}
+    20%{background-image: url(background/epilepsie3.jpg);}
+    30%{background-image: url(background/epilepsie4.jpg);}
+    40%{background-image: url(background/epilepsie5.jpg);}
+    50%{background-image: url(background/epilepsie5.jpg);}
+    60%{background-image: url(background/epilepsie4.jpg);}
+    70%{background-image: url(background/epilepsie3.jpg);}
+    80%{background-image: url(background/epilepsie2.jpg);}
+    90%{background-image: url(background/epilepsie1.jpg);}
+}
+
+@keyframes diapo{
+    0%{background-image: url(background/epilepsie1.jpg);}
+    10%{background-image: url(background/epilepsie2.jpg);}
+    20%{background-image: url(background/epilepsie3.jpg);}
+    30%{background-image: url(background/epilepsie4.jpg);}
+    40%{background-image: url(background/epilepsie5.jpg);}
+    50%{background-image: url(background/epilepsie5.jpg);}
+    60%{background-image: url(background/epilepsie4.jpg);}
+    70%{background-image: url(background/epilepsie3.jpg);}
+    80%{background-image: url(background/epilepsie2.jpg);}
+    90%{background-image: url(background/epilepsie1.jpg);}
+}

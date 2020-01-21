@@ -1,0 +1,99 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/question3.png);
+    background-size: cover;
+    display: flex;
+}
+
+
+.lina
+{
+height: 80px;
+width: 270px;    
+margin-top: 22%;    
+margin-left: 5%;
+display: block;
+position: absolute;
+
+    
+}
+
+.emma
+{
+height: 80px;
+width: 280px;    
+margin-top: 34%;    
+margin-left: 5%;
+display: block;
+position: absolute;   
+}
+
+.amandine
+{
+height: 80px;
+width: 270px;    
+margin-top: 45%;    
+margin-left: 5%;
+display: block;
+position: absolute;
+
+    
+}
+
+.barbara
+{
+height: 80px;
+width: 280px;    
+margin-top: 1%;    
+margin-left: 73%;
+display: block;
+position: absolute;   
+}
+
+.julie
+{
+height: 80px;
+width: 270px;    
+margin-top: 11%;    
+margin-left: 73%;
+display: block;
+position: absolute;
+
+    
+}
+
+.marie
+{
+height: 80px;
+width: 280px;    
+margin-top: 22%;    
+margin-left: 73%;
+display: block;
+position: absolute;   
+}
+
+.sarah
+{
+height: 80px;
+width: 280px;    
+margin-top: 34%;    
+margin-left: 73%;
+display: block;
+position: absolute;   
+}
+
+.charlotte
+{
+height: 80px;
+width: 280px;    
+margin-top: 45%;    
+margin-left: 73%;
+display: block;
+position: absolute;   
+}

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel=stylesheet type="text/css" href="style5.css">
+    </head>
+    
+    <body>
+        <img class="coeur" src="pictures/pressed.coeur.png" onmousedown="changeCoeur()" onmouseup="resetCoeur()"/>
+        <script>
+            let counter = 0 ; 
+            
+            
+            function resetCoeur(){
+                let coeur = document.querySelector(".coeur")
+                coeur.setAttribute("src", "pictures/pressed.coeur.png")
+            }
+            function changeCoeur() {
+                counter = counter + 1;
+                if(counter > 9){
+                    location = "CoeurCouleur.html"
+                }
+                let coeur = document.querySelector(".coeur")
+                coeur.setAttribute("src", "pictures/coeur.png") }  
+            
+            
+        </script>
+    </body>
+</html>

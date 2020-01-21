@@ -1,0 +1,12 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/fin.png);
+    background-size: cover;
+    display: flex;
+}

@@ -1,0 +1,47 @@
+body{
+    position:relative;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+
+#container{
+    height: 100%;
+}
+
+header{
+    position: relative;
+    background-color: black;
+    height: 20%;
+    top:1vh;
+}
+
+.name{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    background-color: #9692f3;
+    width: 32%;
+    height: 90%;
+}
+
+article{
+    background-color: black;
+    height:80%;
+}
+
+.corps{
+    position: relative;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    width: 32%;
+    height: 100%;
+    text-align: center;
+}
+.corps img{
+    width: 100%;
+}

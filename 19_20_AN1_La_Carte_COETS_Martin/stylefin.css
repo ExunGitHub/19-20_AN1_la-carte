@@ -1,0 +1,19 @@
+body {
+  background-image: url('images/fin.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+.button {
+  background-color:inherit;
+  border:all;
+  color: white;
+  padding: 20px 40px;
+  text-align: center;
+  text-decoration:none;
+  display: inline-block;
+  font-size: 100px;
+  font-family:papyrus;
+  margin: 450px 10px;
+  cursor: pointer;
+}

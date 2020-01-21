@@ -1,0 +1,33 @@
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/CraneBase.png);
+    background-size: cover;
+    display: flex;
+}
+
+
+.reve{
+height: 80px;
+width: 250px;    
+margin-top: 29%;    
+margin-left: 70%;
+display: block;
+position: absolute;
+}
+
+.yeux{
+height: 120px;
+width: 260px;    
+margin-top: 38%;    
+margin-left: 71%;
+display: block;
+position: absolute;
+    
+}

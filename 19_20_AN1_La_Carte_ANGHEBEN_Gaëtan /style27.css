@@ -1,0 +1,24 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/debut2.png);
+    background-size: cover;
+    display: flex;
+}
+
+.corp
+{
+height: 250px;
+width: 300px;    
+margin-top: 20%;    
+margin-left: 40%;
+display: block;
+position: absolute;
+
+    
+}

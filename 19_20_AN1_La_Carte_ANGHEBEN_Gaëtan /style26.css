@@ -1,0 +1,24 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/debut.png);
+    background-size: cover;
+    display: flex;
+}
+
+.suivant
+{
+height: 120px;
+width: 300px;    
+margin-top: 42%;    
+margin-left: 70%;
+display: block;
+position: absolute;
+
+    
+}

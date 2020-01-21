@@ -1,0 +1,48 @@
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/coeurcouleur.png);
+    background-size: cover;
+    display: flex;
+}
+
+.boutonCoeur
+{
+height: 80px;
+width: 85px;    
+margin-top: 5%;    
+margin-left: 8%;
+display: block;
+position: absolute;
+
+    
+}
+
+.boutonCoeur2
+{
+height: 80px;
+width: 85px;    
+margin-top: 45%;    
+margin-left: 8%;
+display: block;
+position: absolute;
+
+    
+}
+
+.boutonCoeur3 {
+height: 80px;
+width: 85px;    
+margin-top: 45%;    
+margin-left: 80%;
+display: block;
+position: absolute;
+    
+    
+}

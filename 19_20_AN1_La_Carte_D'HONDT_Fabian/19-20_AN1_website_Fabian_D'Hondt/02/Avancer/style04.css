@@ -1,0 +1,612 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('03.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Tahoma;
+}
+
+.open
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	pointer-events: none;
+	z-index: 10000;
+}
+.open .layer
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: top;
+	animation: open 2s ease-in-out forwards;
+}
+.open .layer:nth-child(1)
+{
+	background: #000;
+	z-index: 2;
+}
+.open .layer:nth-child(2)
+{
+	background: #fff;
+	animation-delay: 1s;
+	z-index: 1;
+}
+@keyframes open
+{
+	0%
+	{
+		transform: scaleY(1);
+	}
+	100%
+	{
+		transform: scaleY(0);
+	}
+}
+
+.container2{
+    position: absolute;
+    top: 80.3%;
+    left: 62.55%;
+    transform-origin: center bottom;
+    animation-name: flicker2;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: a 3s;
+}
+
+.flame2{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow2{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange2{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red2{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white2{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker2{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes a {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container3{
+    position: absolute;
+    top: 80.7%;
+    left: 34.7%;
+    transform-origin: center bottom;
+    animation-name: flicker3;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: b 3s;
+}
+
+.flame3{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow3{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange3{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red3{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white3{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker3{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes b {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container4{
+    position: absolute;
+    top: 67.5%;
+    left: 36.6%;
+    transform-origin: center bottom;
+    animation-name: flicker4;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: c 4s;
+}
+
+.flame4{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow4{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange4{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red4{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white4{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker4{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes c {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container5{
+    position: absolute;
+    top: 66.8%;
+    left: 60.6%;
+    transform-origin: center bottom;
+    animation-name: flicker5;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: d 4s;
+}
+
+.flame5{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow5{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange5{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red5{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white5{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker5{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes d {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container6{
+    position: absolute;
+    top: 56.9%;
+    left: 38%;
+    transform-origin: center bottom;
+    animation-name: flicker6;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: e 5s;
+}
+
+.flame6{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow6{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange6{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red6{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white6{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker6{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes e {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container7{
+    position: absolute;
+    top: 56.5%;
+    left: 59.5%;
+    transform-origin: center bottom;
+    animation-name: flicker5;
+    animation-duration: 3ms;
+    animation-delay: 200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 6;
+    animation: f 5s;
+}
+
+.flame7{
+    bottom: 0;
+    position: absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-45deg)scale(1.5,1.5);
+}
+
+.yellow7{
+    left: 7.5px;
+    width: 15px;
+    height: 15px;
+    background: gold;
+    box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange7{
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background: orange;
+    box-shadow: 0px 0px 9px 4px orange;
+}
+.red7{
+    left: 2.5px;
+    width: 25px;
+    height: 25px;
+    background: red;
+    box-shadow: 0px 0px 9px 4px red;
+}
+.white7{
+    left: 10px;
+    bottom: -4px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px white;
+}
+
+@keyframes flicker7{
+    0%{transform: rotate(-1deg);}
+    20%{transform: rotate(1deg);}
+    40%{transform: rotate(-1deg);}
+    60%{transform: rotate(1deg)scaleY(1.04);}
+    80%{transform: rotate(-2deg)scaleY(0.92);}
+    100%{transform: rotate(1deg);}
+}
+
+@keyframes f {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container10 {
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    transform: translateX(-50%) translateX(-50%);
+    text-align: center;
+    animation: y 7s;
+}
+
+@keyframes y {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container10:hover {
+    text-decoration: underline;
+}
+
+.text1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6vw;
+}
+
+.container11 {
+    position: absolute;
+    top: 90%;
+    left: 78.5%;
+    transform: translateX(-50%) translateX(-50%);
+    text-align: center;
+    animation: z 7s;
+}
+
+@keyframes z {
+                0%
+                {
+                    opacity: 0%
+                }
+                90%
+                {
+                    opacity: 0%
+                }
+                100%
+                {
+                    opacity: 100%
+                }
+            }
+
+.container11:hover {
+    text-decoration: underline;
+}
+
+.text2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6vw;
+}
+
+.animate-area {
+    width: 100%;
+    height: 100vh;
+    background: url('04.png');
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animate 260s linear infinite;
+    z-index: 7;
+}
+
+@keyframes animate {
+    from{background-position: -2000% 0;}
+    to{background-position: 2000% 0;}
+}

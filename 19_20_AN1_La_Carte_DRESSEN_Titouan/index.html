@@ -1,0 +1,147 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title> BESTIAIRE DE L'ESPACE </title>
+    <link href="style.css" rel=stylesheet type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <script type="text/javascript">
+        
+        var image_tracker = "1";
+        
+         function change1(){
+
+            var image = document.getElementById('queue11');
+            
+            if (image_tracker=="1"){
+                image.src="images/queue22.png";
+                image_tracker = "2";     
+            }
+            else if (image_tracker=="2"){
+                image.src="images/queue33.png";
+                image_tracker = "3";
+            }
+            else if (image_tracker=="3"){
+                image.src="images/queue11.png";
+                image_tracker = "1";
+            }
+            }
+             
+                  
+        function change2(){
+            var image = document.getElementById('corps11');
+            
+            if (image_tracker=="1"){
+                image.src="images/corps22.png";
+                image_tracker = "2";
+            }
+            else if (image_tracker=="2"){
+                image.src="images/corps33.png";
+                image_tracker = "3";
+            }
+            else if (image_tracker=="3"){
+                image.src="images/corps11.png";
+                image_tracker = "1";
+            }
+        }
+        
+        function change3(){
+            var image = document.getElementById('tete11');
+            
+            if (image_tracker=="1"){
+                image.src="images/tete22.png";
+                image_tracker = "2";
+            }
+            else if (image_tracker=="2"){
+                image.src="images/tete33.png";
+                image_tracker = "3";
+            }
+            else if (image_tracker=="3"){
+                image.src="images/tete11.png";
+                image_tracker = "1";
+            }
+        }
+        
+    
+        var texte_tracker = "1"
+        
+         function change4(){
+                
+            
+            var texte = document.getElementById('name1');
+            
+            if (texte_tracker=="1"){
+                texte.src="images/texteq2.png";
+                texte_tracker = "2";
+            }
+            else if (texte_tracker=="2"){
+                texte.src="images/texteq3.png";
+                texte_tracker = "3";
+            }
+            else if (texte_tracker=="3"){
+                texte.src="images/texteq1.png";
+                texte_tracker = "1";
+            } 
+        }
+             
+        function change5(){
+                
+            var texte = document.getElementById('name2');
+            
+            if (texte_tracker=="1"){
+                texte.src="images/textec2.png";
+                texte_tracker = "2";
+            }
+            else if (texte_tracker=="2"){
+                texte.src="images/textec3.png";
+                texte_tracker = "3";
+            }
+            else if (texte_tracker=="3"){
+                texte.src="images/textec1.png";
+                texte_tracker = "1";
+            }  
+        }
+            
+        function change6(){
+                
+            var texte = document.getElementById('name3');
+            
+            if (texte_tracker=="1"){
+                texte.src="images/textet2.png";
+                texte_tracker = "2";
+            }
+            else if (texte_tracker=="2"){
+                texte.src="images/textet3.png";
+                texte_tracker = "3";
+            }
+            else if (texte_tracker=="3"){
+                texte.src="images/textet1.png";
+                texte_tracker = "1";
+            }   
+        }
+        
+    </script>
+</head>
+    
+<body>
+    
+    <div id="container">
+    <header>
+        <img src="images/texteq1.png" id="name1" class="name">
+        <img src="images/textec1.png" id="name2" class="name">
+        <img src="images/textet1.png" id="name3" class="name">
+        
+    </header>
+    
+    <article>
+        <div id="sect1" class="corps">
+            <img src="images/queue11.png" id="queue11" onclick="change1(); change4()">
+        </div>
+        <div id="sect2" class="corps">
+            <img src="images/corps11.png" id="corps11" onclick="change2(); change5()">
+        </div>
+        <div id="sect3" class="corps">
+             <img src="images/tete11.png" id="tete11" onclick="change3(); change6()">
+        </div>
+    </article>
+    </div> 
+</body>    

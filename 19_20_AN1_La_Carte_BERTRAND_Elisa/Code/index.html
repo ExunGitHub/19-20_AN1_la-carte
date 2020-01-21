@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zone de transit</title>
+    <iframe width="0" height="0" src="../audio.mp3"></iframe>
+    <style> 
+      body {
+        padding: 20px;
+        margin: 0px;
+        background: black;
+      }
+
+      .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+      }
+
+            .box1{
+              grid-column-start: 1; 
+              grid-column-end: 2; 
+              grid-row-start: 1; 
+              grid-row-end: 2; 
+            }
+
+            .box2{
+              grid-column-start: 2; 
+              grid-column-end: 1; 
+              grid-row-start: 1; 
+              grid-row-end: 2; 
+            }
+
+            .box3{
+              grid-column-start: 2; 
+              grid-column-end: 3; 
+              grid-row-start: 1; 
+              grid-row-end: 2; 
+            }
+
+            .box4{
+              grid-column-start: 3; 
+              grid-column-end: 4; 
+              grid-row-start: 1; 
+              grid-row-end: 2; 
+            }
+
+            .box6{
+              grid-column-start: 1; 
+              grid-column-end: 2; 
+              grid-row-start: 2; 
+              grid-row-end: 3; 
+            }
+
+            .box7{
+              grid-column-start: 2; 
+              grid-column-end: 3; 
+              grid-row-start: 2; 
+              grid-row-end: 3; 
+            }
+
+            .box8{
+              grid-column-start: 3; 
+              grid-column-end: 4; 
+              grid-row-start: 2; 
+              grid-row-end: 3; 
+            }
+
+            .box9{
+              grid-column-start: 4; 
+              grid-column-end: 5; 
+              grid-row-start: 2; 
+              grid-row-end: 3; 
+            }
+
+            .box10{
+              grid-column-start: 1; 
+              grid-column-end: 5; 
+              grid-row-start: 1; 
+              grid-row-end: 2;
+            }
+
+            .box11 {
+              grid-column-start: 2; 
+              grid-column-end: 4; 
+              grid-row-start: 3; 
+              grid-row-end: 4;
+            }
+
+      .maincontainer{
+        position: relative;
+        width: 250px;
+        height: 320px; 
+        border-radius: 10%;
+      }
+
+      .thecard{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: all 0.5s ease;
+      }
+      .thecard:hover{
+        transform: rotateY(180deg);
+      }
+      .thefront{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        color: #333;
+        text-align: center;
+        border-radius: 10%;
+        font-size: 18px; 
+        font-weight: bold;
+
+      }
+      .theback{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        color: #333;
+        text-align: center;
+        border-radius: 10%;
+        font-size: 18px; 
+        font-weight: bold;
+        transform: rotateY(180deg);
+      }
+      .front img{
+        height: 100%
+      }
+
+      .btn {
+        border: 1px;
+        background: none;
+        padding: 10px 20px;
+        font-size: 20px;
+        font-family: Tahoma;
+        cursor: pointer;
+        margin: 10px;
+        transition: 0.8s;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .btn1 {
+          color: black;
+        }
+
+        .btn1:hover {
+          color: black;
+        }
+
+        .btn::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 0%;
+          background: white;
+          z-index: -1;
+          transition: 0.8s;
+        }
+
+        .btn1::before{
+          top: 0;
+          border-radius: 0 0 50% 50%;
+        }
+
+        .btn1:hover::before {
+          height: 180%;
+        }
+
+
+      IMG {border-radius: 10%}
+    </style>
+    <script src="p5.js"></script>
+    <script src="p5.sound.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+
+
+    <div class="wrapper" align="center">
+      <div class="box10">
+        <img src="../images/titre3.png" width="1300px" style="text-align: center">
+      </div>
+    </div>
+    
+    <div class="wrapper" align="center">
+
+      <div class="box1">
+        <div class="maincontainer">  
+          <div class="thecard">
+            <div class="thefront" border-radius="10%">
+              <img src="../images/fortnoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback" border-radius="10%"><a href="https://www.google.com/maps/place/Schansdijk+5,+4655+TE+De+Heen,+Pays-Bas/@51.6011096,4.3053441,559m/data=!3m1!1e3!4m5!3m4!1s0x47c46aa69b5c5a45:0x2daff79166838f2e!8m2!3d51.5996768!4d4.3066852">
+              <img src="../images/fortblanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer">
+        <div class="box2">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/ciblenoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/37%C2%B033'49.9%22N+116%C2%B051'04.1%22W/@37.563848,-116.852756,713m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x0:0x0!2zMzfCsDMzJzUwLjIiTiAxMTbCsDUxJzA0LjQiVw!3b1!8m2!3d37.563936!4d-116.85123!3m5!1s0x0:0x0!7e2!8m2!3d37.5638485!4d-116.8511341">
+              <img src="../images/cibleblanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div> 
+
+      <div class="maincontainer">
+        <div class="box3">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/mainnoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/50%C2%B050'38.6%22N+0%C2%B010'19.6%22W/@50.844068,-0.1726662,142m/data=!3m2!1e3!4b1!4m13!1m6!3m5!1s0x487585578a9cd2ab:0xc5c7a29ee42ad4e6!2sFingerprint+Fingermaze+in+Hove+Park!8m2!3d50.8440833!4d-0.1721111!3m5!1s0x0:0x0!7e2!8m2!3d50.8440681!4d-0.1721191">
+              <img src="../images/mainblanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer">
+        <div class="box4">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/lacbleunoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.fr/maps/place/44%C2%B031'30.3%22N+110%C2%B050'17.0%22W/@44.525077,-110.8386102,160m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x5351ebbea155a649:0xdff59dcdc8fb8761!2sGrand+Prismatic+Spring!3b1!8m2!3d44.525114!4d-110.8382444!3m5!1s0x0:0x0!7e2!8m2!3d44.5250766!4d-110.8380633">
+              <img src="../images/lacbleublanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box6">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/trianglenoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/33%C2%B044'43.9%22N+112%C2%B037'59.6%22W/@33.745535,-112.6354137,748m/data=!3m2!1e3!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d33.7455351!4d-112.6332255">
+              <img src="../images/triangleblanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box7">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/étoile1noir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/37%C2%B024'06.0%22N+116%C2%B052'04.0%22W/@37.4016667,-116.8699665,715m/data=!3m2!1e3!4b1!4m5!3m4!1s0x0:0x0!8m2!3d37.4016667!4d-116.8677778">
+              <img src="../images/étoile1.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box8">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/spirale2noir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/37%C2%B037'41.3%22N+116%C2%B050'54.8%22W/@37.628145,-116.8507357,712m/data=!3m2!1e3!4b1!4m14!1m7!3m6!1s0x0:0x0!2zMzfCsDM3JzQ2LjQiTiAxMTbCsDUwJzU4LjQiVw!3b1!8m2!3d37.6295556!4d-116.8495556!3m5!1s0x0:0x0!7e2!8m2!3d37.6281451!4d-116.8485471">
+              <img src="../images/spirale2blanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box9">
+        <div class="maincontainer">
+          <div class="thecard">
+            <div class="thefront">
+              <img src="../images/rosenoir.jpg" width="250px" height="320px">
+            </div>
+            <div class="theback"><a href="https://www.google.com/maps/place/34%C2%B057'14.7%22N+117%C2%B052'24.1%22W/@34.9532551,-117.8777346,1868m/data=!3m1!1e3!4m5!3m4!1s0x0:0x0!8m2!3d34.9540833!4d-117.8733611">
+              <img src="../images/roseblanc.jpg" width="250px" height="320px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box11">
+        <div class="container" align="center"><a href="../pages/index.html">
+          <button class="btn btn1">Journal de bord</button></a>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+</html>

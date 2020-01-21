@@ -1,0 +1,93 @@
+body {margin: 0px; padding: 0px; overflow: hidden;}
+#screen {height: 100vh; width: 100vw; overflow: hidden; margin: 0px; padding: 0px;}
+
+
+
+#fond {
+	height: 100vh; width: 100vw;
+	position: absolute;
+	top: 0px; left: 0px;
+}
+
+#clouds {
+	height: 30vh; width: 60vh;
+	position: absolute;
+	top: 15%; left: -900px;
+	animation-duration: 80s;
+	animation-name: passingBy;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+}
+
+@keyframes passingBy {
+	0% {left: -900px;}
+	100% {left: 60%;}
+}
+
+
+#temple {
+	height: 77vh; width: 34vw;
+	position: absolute;
+	top: 12%; left: 10%;
+		animation-duration: 0.8s;
+	animation-name: hellow;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+}
+
+@keyframes hellow {
+	0% {height: 0vh; width: 0vw; top: calc(12% + 38.5vh); left: calc(10% + 17vw);}
+	80% {height: 78vh; width: 34.7vw; top: calc(12% - 0.5vh); left: calc(10% - 0.35vw);}
+	100% {height: 77vh; width: 34vw;}
+}
+
+#panel {
+	height: 97vh; width: 45vw;
+	position: absolute;
+	bottom: 1%; right: 2%;
+		animation-duration: 2s;
+	animation-name: slideIn;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-timing-function: ease;	
+}
+
+@keyframes slideIn {
+	0% {bottom: -98%;}
+	50% {bottom: -98%;}
+	100% {bottom: 1%;}
+}
+
+#retour {
+	height: 100%; width: 100%;
+	position: absolute;
+	animation-duration: 2.5s;
+	animation-name: retour;
+	animation-iteration-count: 1;
+	animation-delay: 0s;
+	animation-timing-function: ease;
+
+}
+
+
+
+@keyframes retour {
+	0% {height: 0vh; width: 0vh;}
+	80% {height: 0vh; width: 0vh; top: 50%; left: 50%;}
+	95% {height: 110%; width: 110%; top: -5%; left: -5%;}
+	100% {height: 100%; width: 100%; top: 0%; left: 0%}
+}
+
+a {
+	top: 5vh;
+	left: 5vh;
+	width: 10vh;
+	height: 10vh;
+	z-index: 2;
+	overflow: visible;
+	position: absolute;
+	transition: filter 0.1s, height 0.1s, width 0.1s, top 0.1s, left 0.1s;
+}
+a:hover {filter: brightness(110%);height: 12vh; width: 12vh; top: 4vh; left: 4vh;}

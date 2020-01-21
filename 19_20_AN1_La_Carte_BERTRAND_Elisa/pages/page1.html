@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal de bord</title>
+    <iframe width="0" height="0" src="../audio.mp3"></iframe>
+    <style> 
+      body {
+        padding: 20px;
+        margin: 0px;
+        background: black;
+      }
+
+      .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+      }
+          .box1{
+              grid-column-start: 2; 
+              grid-column-end: 4; 
+              grid-row-start: 1; 
+              grid-row-end: 4;
+          }
+
+          .box2{
+              grid-column-start: 4; 
+              grid-column-end: 5; 
+              grid-row-start: 2; 
+              grid-row-end: 3;
+          }
+
+          .box3{
+              grid-column-start: 1; 
+              grid-column-end: 2; 
+              grid-row-start: 2; 
+              grid-row-end: 3;
+          }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="wrapper" align="center">
+
+
+      <div class="box1">
+        <img src="images/page1.png" width="500px">
+      </div>
+    </div>
+
+    <div class="box2">
+        <div class="container" align="center"><a href="../pages/index.html">
+          <button class="btn btn1">Page précédente</button></a>
+        </div>
+    </div>
+
+    <div class="box3">
+        <div class="container" align="center"><a href="../pages/index.html">
+          <button class="btn btn1">Page suivante</button></a>
+        </div>
+    </div>
+
+  </body>
+
+</html>

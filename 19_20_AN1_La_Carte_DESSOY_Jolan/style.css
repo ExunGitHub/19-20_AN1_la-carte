@@ -1,0 +1,72 @@
+.memoire{
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 15px;
+    margin-left: 660px;
+    margin-top: 230px
+}
+
+
+.diaporama{
+    margin: 0 auto;
+    width: 95vw;
+    height: calc(100vh - 60px);
+    background-image: url(img/cerveau1.jpg);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    z-index: 1;
+    position: relative;
+    
+    webkit-animation-name: diapo;
+    webkit-animation-duration: 1s;
+    webkit-animating-timing-function: linear;
+    webkit-animation-iteration-count: infinite;
+    webkit-animation-direction: normal;
+    
+    moz-animation-name: diapo;
+    moz-animation-duration: 9s;
+    moz-animating-timing-function: linear;
+    moz-animation-iteration-count: infinite;
+    moz-animation-direction: normal;
+    
+    animation-name: diapo;
+    animation-duration: 4s;
+    animating-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+@-webit-keyframes diapo{
+    0%{background-image: url(img/cerveau1.jpg);}
+    25%{background-image: url(img/cerveau2.jpg);}
+    50%{background-image: url(img/cerveau1.jpg);}
+    75%{background-image: url(img/cerveau3.jpg);}
+}
+
+@-moz-keyframes diapo{
+    0%{background-image: url(img/cerveau1.jpg);}
+    25%{background-image: url(img/cerveau2.jpg);}
+    50%{background-image: url(img/cerveau1.jpg);}
+    75%{background-image: url(img/cerveau3.jpg);}
+}
+
+@keyframes diapo{
+    0%{background-image: url(img/cerveau1.jpg);}
+    25%{background-image: url(img/cerveau2.jpg);}
+    50%{background-image: url(img/cerveau1.jpg);}
+    75%{background-image: url(img/cerveau3.jpg);}
+}
+
+.epilepsie {
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 15px;
+    margin-left: 1120px;
+    margin-top: 200px;
+}
+
+.dyslexie {
+    font-family: Verdana, Calibri, sans-serif;
+    font-size: 11px;
+    margin-left: 933px;
+    margin-top: 455px
+}

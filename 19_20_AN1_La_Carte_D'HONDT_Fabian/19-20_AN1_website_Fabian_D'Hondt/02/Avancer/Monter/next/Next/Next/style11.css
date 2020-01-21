@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.myVideo {
+    object-fit: cover; 
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container11 {
+    position: absolute;
+    top: 22%;
+    left: 53.2%;
+    transform: translateX(-50%) translateX(-50%);
+    text-align: center;
+    animation: y 6s;
+}
+
+@keyframes y {
+    0%
+    {
+        opacity: 0%
+    }
+    90%
+    {
+        opacity: 0%
+    }
+    100%
+    {
+        opacity: 100%
+    }
+}
+
+.container11:hover {
+    text-decoration: underline;
+}
+
+.text1 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.8vw;
+}

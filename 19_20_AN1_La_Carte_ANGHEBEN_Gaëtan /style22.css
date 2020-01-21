@@ -1,0 +1,79 @@
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/question2.png);
+    background-size: cover;
+    display: flex;
+}
+
+
+.un
+{
+height: 80px;
+width: 70px;    
+margin-top: 10%;    
+margin-left: 76%;
+display: block;
+position: absolute;
+
+    
+}
+
+.deux
+{
+height: 80px;
+width: 70px;    
+margin-top: 10%;    
+margin-left: 90%;
+display: block;
+position: absolute;   
+}
+
+.trois
+{
+height: 80px;
+width: 70px;    
+margin-top: 24%;    
+margin-left: 74%;
+display: block;
+position: absolute;
+
+    
+}
+
+.quatre
+{
+height: 80px;
+width: 70px;    
+margin-top: 24%;    
+margin-left: 92%;
+display: block;
+position: absolute;   
+}
+
+.cinq
+{
+height: 80px;
+width: 70px;    
+margin-top: 38%;    
+margin-left: 74%;
+display: block;
+position: absolute;
+
+    
+}
+
+.six
+{
+height: 80px;
+width: 70px;    
+margin-top: 38%;    
+margin-left: 91%;
+display: block;
+position: absolute;   
+}

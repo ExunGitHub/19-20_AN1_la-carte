@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="PagePrincipale.css" type="text/css">
+    <title>Map Project</title>
+  </head>
+  <body>
+
+    <div id="container">
+
+      <img src="images/galaxy.png" id="galaxy" class="background" alt="galaxy">
+
+      <!-- The width and height here don't matter : automatically resized-->
+      <img src="images/map.png" id="map" class="foreground" width="1920" height="1080" alt="map" usemap="#mapCarte">
+
+      <img src="images/chapitre1texte.jpg" id="chapitre1texte" class="foreground chapitreTexte" width="1920" height="1080" alt="chapitre1" usemap="#mapBack">
+      <img src="images/chapitre2texte.jpg" id="chapitre2texte" class="foreground chapitreTexte" width="1920" height="1080" alt="chapitre2" usemap="#mapBack">
+      <img src="images/chapitre3texte.jpg" id="chapitre3texte" class="foreground chapitreTexte" width="1920" height="1080" alt="chapitre3" usemap="#mapBack">
+      <img src="images/chapitre4texte.jpg" id="chapitre4texte" class="foreground chapitreTexte" width="1920" height="1080" alt="chapitre4" usemap="#mapBack">
+
+      <map name="mapCarte" id="mapCarte">
+        <!-- Representing the chapter areas -->
+        <area shape="circle" class="chapter" coords="890,365,25" id="chapitre1" href="javascript:changePage('chapitre1')">
+        <area shape="circle" class="chapter" coords="945,405,42" id="chapitre2" href="javascript:changePage('chapitre2')">
+        <area shape="circle" class="chapter" coords="1150,522,43" id="chapitre3" href="javascript:changePage('chapitre3')">
+        <area shape="circle" class="chapter" coords="508,435,37" id="chapitre4" href="javascript:changePage('chapitre4')">
+      </map>
+
+      <map name="mapBack"  id="mapBack">
+        <!-- Representing the stone back to map area -->
+        <area shape="circle" class="back" coords="75,143,100" id="back" href="javascript:changePage('map')">
+        <area shape="circle" class="back" coords="120,120,120" id="back" href="javascript:changePage('map')">
+        <area shape="circle" class="back" coords="168,98,110" id="back" href="javascript:changePage('map')">
+      </map>
+
+      <!-- Chapter images not displayed -->
+      <img src="images/chapitre1.png" class="chapterImage" id="Imagechapitre1" width="350" height="600" alt="chapitre1">
+      <img src="images/chapitre2.png" class="chapterImage" id="Imagechapitre2" width="350" height="600" alt="chapitre2">
+      <img src="images/chapitre3.png" class="chapterImage" id="Imagechapitre3" width="350" height="600" alt="chapitre3">
+      <img src="images/chapitre4.png" class="chapterImage" id="Imagechapitre4" width="350" height="600" alt="chapitre4">
+
+    </div>
+
+    <script src="lib/image-map.js"></script>
+    <script src="PagePrincipale.js"></script>
+
+  </body>
+</html>

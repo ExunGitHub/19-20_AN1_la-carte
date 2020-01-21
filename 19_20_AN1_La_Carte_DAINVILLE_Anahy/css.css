@@ -1,0 +1,17 @@
+html, body
+
+{background-color: snow}
+
+{padding: 0
+    margin:0;}
+div {
+  height:30px;
+  width: 130%;
+  background-color: snow;
+}
+
+.super img{
+    max-width: 80%;
+}
+
+

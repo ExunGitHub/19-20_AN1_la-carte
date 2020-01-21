@@ -1,0 +1,37 @@
+
+
+html, body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+} 
+
+body{
+    background-image: url(pictures/question1.png);
+    background-size: cover;
+    display: flex;
+}
+
+
+.homme
+{
+height: 80px;
+width: 270px;    
+margin-top: 40%;    
+margin-left: 5%;
+display: block;
+position: absolute;
+
+    
+}
+
+.femme
+{
+height: 80px;
+width: 280px;    
+margin-top: 40%;    
+margin-left: 73%;
+display: block;
+position: absolute;   
+}

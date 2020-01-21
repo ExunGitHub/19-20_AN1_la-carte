@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Hanalei+Fill&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Hanalei Fill;
+    background: url('02.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    position: absolute;
+    top: 50.5%;
+    left: 54%;
+    transform: translateX(-50%) translateX(-50%);
+    text-decoration: none;
+}
+
+.container:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    display: i,inline-block;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter;
+    font-size: 50px;
+    padding: 0 20px;
+    font-size: 2.6vw;
+}

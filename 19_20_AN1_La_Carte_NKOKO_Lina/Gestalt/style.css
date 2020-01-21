@@ -1,0 +1,95 @@
+
+@font-face {
+
+    font-family: "cotham";
+
+    src: url(CothamSans.otf);
+}
+
+body{
+    background-color: white;
+    height:100vh;
+    overflow:hidden;
+
+}
+
+#imageFond{
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    background-image: url(../Images/fond_collection.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center; 
+    z-index: -99;
+}
+
+h1{
+    font-family: "cotham", sans-serif;
+    font-size: 10vw;
+    text-align: center;
+}
+
+p{
+    font-family: "cotham", sans-serif;
+    text-align: center;
+    font-size: 7vh;
+    margin-top: 10vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+a{
+    font-family: "cotham", sans-serif;
+    margin-top: 0vh;
+    font-size: 1.8vw;
+    margin-left: 42vw
+}
+
+.intro, .titre, .texte, .lien{
+
+    -webkit-transition: background-color 1.5s, font-size 1s, margin-top 500ms; 
+
+    transition: background-color 1.5s, font-size 1s, margin-top 500ms;
+     }
+
+@media screen and (orientation: portrait) {
+
+    .intro{
+        margin-top:1vh;
+        font-size:4vw;
+    }
+     .titre{
+        margin-top:0vh;
+        font-size:9vw;
+    }
+     .texte{
+        margin-top:10vh;
+        font-size:3vw;
+        text-align:justify;
+    }
+     
+
+}
+
+@media screen and (orientation: landscape) {
+
+    .intro{
+        margin-top:1vh;
+        font-size: 1.5vw;
+    }
+    .titre{
+        margin-top:0vh;
+    }
+    .texte{
+        font-size: 2vw;
+        text-align:justify;
+    }
+    .lien{
+        margin-top: 0vh;
+        font-size: 1.8vw;
+        margin-left: 42vw
+}
+

@@ -1,0 +1,53 @@
+#P1{
+	position: absolute;
+	float: left; 
+	color: white;
+	font-size: 20px;
+    left:150px;
+    top: 200px;
+    height: 400px;
+    width: 400px;
+
+    
+   }
+#P2{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+    left: 150px;
+    top: 300px;
+    height: 400px;
+    width: 400px;
+    
+   }
+
+#P3{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+    left: 150px;
+    top: 400px;
+    height: 400px;
+    width: 400px;
+    
+   }
+
+ #P4{
+	position: absolute;
+	color: white;
+	font-size: 20px;
+    left: 1350px;
+    top: 100px;
+    height: 400px;
+    width: 400px;
+    
+   }
+
+
+.hide{
+	opacity: 0.0;
+}
+
+*{
+	transition: opacity 2.3s;
+}

@@ -1,0 +1,94 @@
+body {
+	margin: 0px; padding: 0px; width: 100vw; overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+.pic {width: 100vw; position: absolute;}
+
+
+/*plan 1*/
+#accueil {height: 100vh; top: 0px; left: 0px;}
+#bordAccueil {height: 100vh; top: 0px; left: 0px; z-index: 2;}
+
+.acc {position: absolute;}
+#planete {height: 80vh; top: 20vh; left: 0px;}
+#lune {height: 25vh; top: 19vh; right: 20vh;}
+
+/*plan 2*/
+#cratere {top: 102vh; left: 0px;}
+
+/*plan 3*/
+#mer1 {top: calc(104vh + ((100vw / 16) * 9));}
+#mer2 {top: calc(106vh + (2 * ((100vw / 16) * 9)));}
+
+/*plan 4*/
+#forge {top: calc(108vh + (3 * ((100vw / 16) * 9)));}
+
+/*plan 5*/
+#moon {top: calc(110vh + (4 * ((100vw / 16) * 9)));}
+
+
+/*bordures*/
+.bordure {position: absolute; width: 100vw; height: 10vh ; left: 0vw; z-index: 3;}
+#bord1 {top: 96vh;}
+#bord2 {top: calc(98vh + ((100vw / 16) * 9));}
+#bord3 {top: calc(100vh + (2 * ((100vw / 16) * 9)));}
+#bord4 {top: calc(102vh + (3 * ((100vw / 16) * 9)));}
+#bord5 {top: calc(104vh + (4 * ((100vw / 16) * 9)));}
+#bord6 {top: calc(106vh + (5 * ((100vw / 16) * 9))); height: 6vh;}
+
+
+/*liens & stuff*/
+#home {position: fixed; height: 12vh; width: 7vw; bottom: 0px; left: 0px; z-index: 3;}
+#homeIMG {height: 100%; width: 100%;}
+
+#infos {position: absolute; height: 12vh; width: 7vw; top: 0px; left: 0px; z-index: 3;}
+#infosP {position: absolute; top: 8vh; left: 10vw; z-index: 4; background-color: #444; opacity: 0; border-radius: 20px; transition: 0.2s; padding-right: 10px; padding-left: 10px; margin-right: 10vw; text-align: center;}
+#infos:hover + #infosP {opacity: 1;}
+
+.AccLinks {z-index: 2; position: absolute; border-radius: 100vh; border: 0px solid white; transition: 0.3s;}
+#cratLink {height: 12.5vh; width: 12.5vh; left: 29vh; top: 34vh;}
+#merLink {height: 10vh; width: 10vh; left: 84.5vh; top: 67.5vh;}
+#forgeLink {height: 15vh; width: 15vh; left: 52.7vh; top: 62.5vh;}
+#moonLink {height: 10.5vh; width: 10.5vh; right: 31vh; top: 29vh;}
+
+#cratLink:hover {border: 1vh solid white; left: 28vh; top: 33vh;}
+#merLink:hover {border: 1vh solid white; left: 83.5vh; top: 66.5vh;}
+#forgeLink:hover {border: 1vh solid white; left: 51.5vh; top: 61.5vh;}
+#moonLink:hover {border: 1vh solid white; right: 30vh; top: 28vh;}
+
+
+#arrow {position: absolute; top: calc(102vh + 10vw + (1 * ((100vw / 16) * 9))); left: 85vw;height: 10vw; transition: 0.2s;}
+#arrowIMG {height: 100%; transform: rotate(180deg);}
+#arrow:hover {top: calc(102vh + 9vw + (1 * ((100vw / 16) * 9))); left: 84vw; height: 12vw;}
+
+
+.question { height: 4vw; position: absolute; z-index: 2 }
+.info {height: 35vh; width: 50vh; position: absolute; z-index: 3; overflow: hidden; transition: 0.3s; background-color: #444; border-radius: 20px; opacity: 0;}
+.p {height: 25vh; width: 40vh; top: 5vh; left: 5vh; position: relative; text-align: center;}
+p {color: white; font-family: Verdana; font-size: 1.1em;}
+
+#questAccueil {left: 70vw; top: 75vh;}
+#infoAccueil {left: 35vw; top: 30vh;}
+#questAccueil:hover + #infoAccueil {opacity: 1;}
+
+#questCratere {left: 80vw; top: 115vh;}
+#infoCratere {left: 8vw; top: 115vh;}
+#questCratere:hover + #infoCratere {opacity: 1;}
+
+#questMer1 {left: 55vw; top: calc(102vh + 25vw + (1 * ((100vw / 16) * 9)));}
+#infoMer1 {left: 60vw; top: calc(102vh + 20vw + (1 * ((100vw / 16) * 9)));}
+#questMer1:hover + #infoMer1 {opacity: 1;}
+
+#questMer2 {left: 55vw; top: calc(104vh + 25vw + (2 * ((100vw / 16) * 9)));}
+#infoMer2 {left: 65vw; top: calc(104vh + 20vw + (2 * ((100vw / 16) * 9)));}
+#questMer2:hover + #infoMer2 {opacity: 1;}
+
+#questForge {left: 80vw; top: calc(106vh + 20vw + (3 * ((100vw / 16) * 9)));}
+#infoForge {left: 4vw; top: calc(106vh + 26vw + (3 * ((100vw / 16) * 9)));}
+#questForge:hover + #infoForge {opacity: 1;}
+
+#questMoon {left: 80vw; top: calc(106vh + 20vw + (4 * ((100vw / 16) * 9)));}
+#infoMoon {left: 4vw; top: calc(106vh + 26vw + (4 * ((100vw / 16) * 9)));}
+#questMoon:hover + #infoMoon {opacity: 1;}

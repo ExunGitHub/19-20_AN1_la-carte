@@ -1,0 +1,2 @@
+Ouvrir code ---> index.html
+Dans la zone de transit, un bouton caché est positionné sous les deux cartes inférieurs du milieu. 
