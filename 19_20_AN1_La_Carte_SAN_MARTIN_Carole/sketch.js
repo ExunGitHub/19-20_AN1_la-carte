@@ -16,6 +16,7 @@ let celloPlan2;
 let celloPlan3;
 let celloPlan4;
 
+let primitivePath;
 function preload(){
 	imgRochers = loadImage("images/parallax1/rochers.png");
     imgCorbeau = loadImage("images/animaux1/corbeau.png");
@@ -61,6 +62,7 @@ function setup() {
 
     celloPlan4.image(imgPlan4, 0, 0);
     celloPlan4.image(imgLoup, loupposX, loupposY);
+    primitivePath=location.pathname;
 }
 
 function draw() {
@@ -99,7 +101,7 @@ function draw() {
        
     
          if(mouseIsPressed){
-            location.pathname= "/19-20_Carte_SanMartin_Carole/pages/corbeau"
+            location.pathname= primitivePath+"/pages/corbeau"
          }
     }
 
@@ -113,7 +115,7 @@ function draw() {
          
     
          if(mouseIsPressed){
-            location.pathname= "/19-20_Carte_SanMartin_Carole/pages/lapins"
+            location.pathname= primitivePath+"/pages/lapins"
          }
     }
 
@@ -127,7 +129,7 @@ function draw() {
          
     
          if(mouseIsPressed){
-            location.pathname= "/19-20_Carte_SanMartin_Carole/pages/cerf"
+            location.pathname= primitivePath+"/pages/cerf"
          }
     }
 
@@ -140,7 +142,7 @@ function draw() {
          
     
          if(mouseIsPressed){
-            location.pathname= "/19-20_Carte_SanMartin_Carole/pages/loup"
+            location.pathname= primitivePath+"/pages/loup"
          }
     }
 

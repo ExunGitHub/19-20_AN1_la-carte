@@ -77,7 +77,7 @@ let divinPosXInScreen = divinposX+ (posDivin+480)
     ){
         
          if(mouseIsPressed){
-            location.pathname= "/19-20_Carte_SanMartin_Carole/"
+            location.pathname= "/19-20_AN1_la-cart/19_20_AN1_La_Carte_SAN_MARTIN_Carole/"
          }
     }
 
